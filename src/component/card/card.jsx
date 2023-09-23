@@ -1,10 +1,10 @@
 import React from "react";
 function Card({ title }) {
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center">
       <div className="relative h-[430px] w-[280px] overflow-hidden ">
         <div className=" absolute text-center -translate-x-2/4 left-2/4  top-[10px]">
-          <div className="relative w-[250px] h-[400px] duration-[0.5s]  cursor-pointer hover:delay-[0.2s] hover:w-[280px] hover:h-[420px] hover:z-10 list-style: none">
+          <div className="relative w-[250px] h-[400px] duration-[0.4s]  cursor-pointer hover:delay-[0.1s] hover:w-[280px] hover:h-[420px] hover:z-10 ">
             <div className="absolute w-full  h-full bg-cover bg-[center_top] ">
               <img
                 alt="image1"

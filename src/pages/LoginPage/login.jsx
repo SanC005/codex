@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Login() {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
     <div className="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
       <div className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
         <div className="p-4 py-6 text-white bg-blue-500 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
@@ -13,11 +13,18 @@ function Login() {
         <div>
           <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
             <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-              <img
-                className="mx-auto h-10 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt="Your Company"
-              />
+            <p
+      className="flex items-center mb-6 text-2xl font-semibold text-gray-900 "
+    >
+      <Link to='/'>
+      <img
+        className="w-8 h-8 mr-2"
+        src="book.png"
+        alt="logo"
+        />
+        </Link>
+      Codex
+    </p>
               <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
                 Sign in to your account
               </h2>
