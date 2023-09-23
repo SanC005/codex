@@ -6,8 +6,8 @@ function Feed() {
     <Card key={data.id} title={data.title}></Card>
   )})
   return (
-    <div className="flex">
-        {card}
+    <div className="flex bg-red-500 overflow-scroll">
+          {card}
     </div>
 
   )
