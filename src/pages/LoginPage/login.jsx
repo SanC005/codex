@@ -1,7 +1,10 @@
 import React from "react";
+import Header from "../../component/homePage/header";
 
 function Login() {
   return (
+    <div>
+      <Header/>
     <div className="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
       <div className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
         <div className="p-4 py-6 text-white bg-blue-500 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
@@ -77,16 +80,19 @@ function Login() {
               </form>
               <p className="mt-10 text-center text-sm text-gray-500">
                 Not a member?
-                <p
+                <a href="/signup">
+                <p 
                   className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
                 >
-                  Start a 14 day free trial
+                  Don't have an account?
                 </p>
+                </a>
               </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

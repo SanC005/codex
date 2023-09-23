@@ -1,7 +1,10 @@
 import React from 'react'
+import Header from '../../component/homePage/header'
 
 function Signup() {
   return (
+    <div>
+      <Header/>
     <div className="bg-gray-50 dark:bg-gray-900">
   <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
     <p
@@ -90,16 +93,20 @@ function Signup() {
           </button>
           <p className="text-sm font-light text-gray-500 dark:text-gray-400">
             Already have an account?{" "}
+          <a href='/login'>
+
             <p
               className="font-medium text-primary-600 hover:underline dark:text-primary-500"
             >
               Login here
             </p>
+          </a>
           </p>
         </form>
       </div>
     </div>
   </div>
+</div>
 </div>
 
   )
