@@ -4,8 +4,8 @@ function Body() {
   return (
     <div className="flex flex-col h-screen">
 
-    <div className="bg-sky-400 h-1/2 flex my-32">
-      <div className="h-96 carousel carousel-vertical px-2 align-middle w-1/4">
+    <div className=" h-1/2 flex my-32">
+      <div className="h-96 carousel carousel-vertical px-2 align-middle w-1/4 shadow-lg">
         <div className="carousel-item h-full w-full">
           <img className="object-fill w-full" src="http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg" alt="book_image"/>
         </div>
@@ -23,7 +23,7 @@ function Body() {
         </div>
       </div>
 
-      <div className="h-96 carousel carousel-vertical px-2 align-middle w-1/4">
+      <div className="h-96 carousel carousel-vertical px-2 align-middle w-1/4 shadow-lg">
         <div className="carousel-item h-full w-full">
           <img className="object-fill w-full" src="http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg" alt="book_image"/>
         </div>
@@ -41,7 +41,7 @@ function Body() {
         </div>
       </div>
 
-      <div className="h-96 carousel carousel-vertical rounded-box px-2 align-middle w-1/4">
+      <div className="h-96 carousel carousel-vertical rounded-box px-2 align-middle w-1/4 shadow-lg">
         <div className="carousel-item h-full w-full">
           <img className="object-fill w-full" src="http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg" alt="book_image"/>
         </div>
@@ -59,7 +59,7 @@ function Body() {
         </div>
       </div>
 
-      <div className="h-96 carousel carousel-vertical rounded-box px-2 align-middle w-1/4">
+      <div className="h-96 carousel carousel-vertical rounded-box px-2 align-middle w-1/4 shadow-lg">
         <div className="carousel-item h-full w-full">
           <img className="object-fill w-full" src="http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg" alt="book_image"/>
         </div>
@@ -78,9 +78,13 @@ function Body() {
       </div>
 
       </div>
-    <div className="flex text-6xl justify-center font-thin">
+      <div className="flex justify-around">
+    <div className="flex text-6xl font-thin w-full bg-green-500 px-32">
       Endless Collections of Books
     </div>
+      <div className="text-md font-light w-full bg-red-500 px-32 py-8">
+        Dive into a vast collection of books, magazines, journals, and multimedia resources spanning various genres and subjects. There's something for everyone, from avid readers to research enthusiasts.</div>
+      </div>
     </div>
   );
 }
