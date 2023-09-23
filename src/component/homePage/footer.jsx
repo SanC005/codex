@@ -1,21 +1,22 @@
 import React from 'react'
 import { FaGithub, FaLinkedin} from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
   return (
-    <div className='bg-black h-96 mt-48'>
+    <div className='bg-black h-96 '>
       <div className='flex justify-evenly h-full pt-48'>
-        <a href='https://github.com/'>
+        <Link to='https://github.com/'>
           <FaGithub size={40} style={{ color: "#FFFFFF" }}/>
-        </a>
-        <a href='https://github.com/'>
+        </Link>
+        <Link to='https://github.com/'>
           <FaLinkedin size={40} style={{ color: "#FFFFFF" }}/>
-        </a>
-        <a href='https://github.com/'>
+        </Link>
+        <Link to='https://github.com/'>
           <AiOutlineMail size={40} style={{ color: "#FFFFFF" }}/>
-        </a>
+        </Link>
       </div>
 
     </div>

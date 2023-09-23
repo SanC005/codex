@@ -10,7 +10,10 @@ function App() {
   return (
 
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home />} >
+        <Route path='test' element={<Test/>}/>
+      </Route>
+
       <Route path="/login" element={  <Login/>} />
       <Route path="/signup" element={   <Signup/>} />
       <Route path="/user" element={   <User/>} />
@@ -20,4 +23,12 @@ function App() {
 }
 
 export default App;
+
+
+  function Test() {
+  return (
+    <div>App</div>
+  )
+}
+
 

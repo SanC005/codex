@@ -2,7 +2,7 @@ import React from "react";
 
 function Body() {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen bg-blue-400 mb-48 text-black">
 
     <div className=" h-1/2 flex my-32">
       <div className="h-96 carousel carousel-vertical px-2 align-middle w-1/4 shadow-lg">
@@ -78,11 +78,14 @@ function Body() {
       </div>
 
       </div>
-      <div className="flex justify-around">
-    <div className="flex text-6xl font-thin w-full bg-green-500 px-32">
-      Endless Collections of Books
+      <div className="flex flex-col justify-around">
+    <div className="flex text-6xl font-thin w-full justify-center">
+      <span className="w-fit shadow-white">
+        Endless Collections of Books
+        </span>
+        
     </div>
-      <div className="text-md font-light w-full bg-red-500 px-32 py-8">
+      <div className="text-md font-light w-full justify-center px-64 xl:px-[24rem] py-16">
         Dive into a vast collection of books, magazines, journals, and multimedia resources spanning various genres and subjects. There's something for everyone, from avid readers to research enthusiasts.</div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../../component/homePage/header'
-
+import { Link } from 'react-router-dom'
 function Signup() {
   return (
     <div>
@@ -93,14 +93,14 @@ function Signup() {
           </button>
           <p className="text-sm font-light text-gray-500 dark:text-gray-400">
             Already have an account?{" "}
-          <a href='/login'>
+          <Link to='/login'>
 
             <p
               className="font-medium text-primary-600 hover:underline dark:text-primary-500"
             >
               Login here
             </p>
-          </a>
+          </Link>
           </p>
         </form>
       </div>
