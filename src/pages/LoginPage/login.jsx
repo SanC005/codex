@@ -5,7 +5,7 @@ function Login() {
     <div className="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
       <div className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
         <div className="p-4 py-6 text-white bg-blue-500 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
-          <img src="https://images.unsplash.com/photo-1571988840298-3b5301d5109b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
+          <img alt="image1" src="https://images.unsplash.com/photo-1571988840298-3b5301d5109b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" />
         </div>
         <div>
           <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
@@ -48,12 +48,11 @@ function Login() {
                       Password
                     </label>
                     <div className="text-sm">
-                      <a
-                        href="#"
+                      <p
                         className="font-semibold text-indigo-600 hover:text-indigo-500"
                       >
                         Forgot password?
-                      </a>
+                      </p>
                     </div>
                   </div>
                   <div className="mt-2">
@@ -78,12 +77,11 @@ function Login() {
               </form>
               <p className="mt-10 text-center text-sm text-gray-500">
                 Not a member?
-                <a
-                  href="#"
+                <p
                   className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
                 >
                   Start a 14 day free trial
-                </a>
+                </p>
               </p>
             </div>
           </div>

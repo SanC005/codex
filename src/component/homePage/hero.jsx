@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div className='bg-cyan-400 h-screen flex  px-8 justify-between'>
+    <div className='bg-cyan-400 h-screen flex px-8 justify-between text-black'>
       <div className='flex flex-col py-64'>
       <div className='text-8xl font-semibold font-sans py-2'>
         hero section
