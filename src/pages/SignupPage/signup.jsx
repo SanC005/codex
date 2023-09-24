@@ -1,15 +1,27 @@
 import React from 'react'
-import Header from '../../component/homePage/header'
+// import Header from '../../component/homePage/header'
 import { Link } from 'react-router-dom'
 function Signup() {
+  const getDetails = (e) => {
+    e.preventDefault();
+    const emailInput = document.querySelector('#email').value
+    const usernameInput = document.querySelector('#username').value
+    const passwordInput = document.querySelector('#password').value
+    // setSignUpDetails({username:`${usernameInput}`,email:`${emailInput}`,password:`${passwordInput}`})
+    // console.log(signUpDetails)
+    const url = `https://chimes-api.vercel.app/api/v2/auth/register`
+    const item = {username:`${usernameInput}`,email:`${emailInput}`,password:`${passwordInput}`}
+    // postUser(item,url)
+    alert('you have successfully signed up')
+  }
   return (
     <div>
       {/* <Header/> */}
-    <div className="bg-gray-50 dark:bg-gray-900">
+    <div className="bg-gray-50">
       
   <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-    <p
-      className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
+    <div
+      className="flex items-center mb-6 text-2xl font-semibold text-gray-900 "
     >
       <Link to='/'>
       <img
@@ -19,23 +31,24 @@ function Signup() {
         />
         </Link>
       Codex
-    </p>
-    <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+    </div>
+    <div className="w-full bg-white rounded-lg shadow-lg shadow-gray-500/50 md:mt-0 sm:max-w-md xl:p-0 ">
       <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-        <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-          Create and account
+        <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
+          Create an account
         </h1>
         <form className="space-y-4 md:space-y-6" action="#">
         <div>
             <label
               htmlFor="Name"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-gray-900 "
             >
               UserName
             </label>
             <input
+              id="username"
               type="text"
-              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
               placeholder="Enter Your name"
               required=""
             />
@@ -43,23 +56,23 @@ function Signup() {
           <div>
             <label
               htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-gray-900 "
             >
               Your email
             </label>
             <input
+              id="email"
               type="email"
               name="email"
-              id="email"
-              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="name@company.com"
+              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+              placeholder="abc@gmail.com"
               required=""
             />
           </div>
           <div>
             <label
               htmlFor="password"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-gray-900 "
             >
               Password
             </label>
@@ -68,14 +81,14 @@ function Signup() {
               name="password"
               id="password"
               placeholder="••••••••"
-              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
               required=""
             />
           </div>
           <div>
             <label
               htmlFor="confirm-password"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-gray-900 "
             >
               Confirm password
             </label>
@@ -84,27 +97,25 @@ function Signup() {
               name="confirm-password"
               id="confirm-password"
               placeholder="••••••••"
-              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
               required=""
             />
           </div>
+          <Link to={'/user'}>
           <button
             type="submit"
-            className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            className="bg-indigo-600 hover:bg-indigo-500 w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+            onClick={(e) => getDetails(e)}
           >
             Create an account
           </button>
-          <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-            Already have an account?{" "}
-          <Link to='/login'>
-
-            <p
-              className="font-medium text-primary-600 hover:underline dark:text-primary-500"
-            >
-              Login here
-            </p>
           </Link>
-          </p>
+          <div className="text-sm font-semibold text-indigo-600 hover:text-indigo-500 ">
+          <Link to='/login'>
+            Already have an account?{" "}
+
+          </Link>
+          </div>
         </form>
       </div>
     </div>

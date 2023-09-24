@@ -3,7 +3,7 @@ function Middle() {
 
   return (
     <div className='h-screen bg-gray-100'>
-        <div className='text-6xl font-bold flex justify-center pt-48 font-serif '>
+        <div className='text-6xl font-bold flex justify-center pt-48 font-serif px-12'>
 
         Easy. Reliable. Cheap.
         </div>

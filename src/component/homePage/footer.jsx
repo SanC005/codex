@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className='bg-black h-96 '>
-      <div className='flex justify-evenly h-full pt-48'>
+    <div className='bg-black h-60'>
+      <div className='flex justify-center pt-24 gap-12'>
         <Link to='https://github.com/'>
           <FaGithub size={40} style={{ color: "#FFFFFF" }}/>
         </Link>

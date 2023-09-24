@@ -49,18 +49,13 @@ export default function Header() {
        <SearchBar/>
        </div>
 
-    
-
-      
-
-       
-        
+  
 
         <Link to="/login">
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a  className="text-sm font-semibold leading-6 text-gray-900 ">
+          <div  className="text-sm font-semibold leading-6 text-gray-900 ">
             Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+          </div>
         </div>
         </Link>
         
@@ -118,7 +113,7 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
-                <a
+                {/* <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
@@ -135,7 +130,7 @@ export default function Header() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Company
-                </a>
+                </a> */}
               </div>
 
 

@@ -11,6 +11,7 @@ function Sidebar() {
       >
         <div className="h-full px-5 py-5  overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <ul className="space-y-6 font-medium">
+            <Link to='/bookmark'> 
             <li>
               <p
                 href="#"
@@ -27,9 +28,10 @@ function Sidebar() {
                   <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
                 </svg>
 
-                <span className="ml-3">Your Choice</span>
+                <span className="ml-3">Bookmark</span>
               </p>
             </li>
+            </Link>
             <li>
               <p
                 href="#"
