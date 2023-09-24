@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../component/homePage/header";
 import { Link } from "react-router-dom";
 function Login() {
+  function handleCallbackResponse(res){
+    console.log("Encoded JWT ID token is: "+res.credential)
+  }
+  useEffect(() => {
+    /* global google */
+    google.accounts.id.initialize({
+      client_id: "834208871160-k1fvufn3o3ftp8c58j6fft2hbe87gtnh.apps.googleusercontent.com",
+      callback: handleCallbackResponse
+    });
+    google.accounts.id.renderButton(
+      document.getElementById("signInDiv"), 
+      { theme: "outline",size:"large"}
+    );
+  },[])
   return (
     <div>
       {/* <Header/> */}
@@ -25,11 +39,14 @@ function Login() {
         </Link>
       Codex
     </p>
-              <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+              <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 pb-4">
                 Sign in to your account
               </h2>
+              <div className="" id="signInDiv">
+                
+              </div>
             </div>
-            <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+            <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-sm">
               <form className="space-y-6" action="#" method="POST">
                 <div>
                   <label

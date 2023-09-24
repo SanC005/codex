@@ -14,7 +14,7 @@ function User() {
         <div className="invisible md:visible">
           <Sidebar />
         </div>
-        <div className="absolute start-0 md:start-56 xl:px-12 lg:px-10 w-full lg:w-fit py-24">
+        <div className="absolute start-0 md:start-56 xl:px-12 lg:px-10 w-full lg:w-fit py-24 bg-black">
           <Feed />
           <Feed />
         </div>
