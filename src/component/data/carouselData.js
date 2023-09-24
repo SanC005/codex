@@ -1,6 +1,6 @@
 export const carouselData = [
     {
-        images1:[
+        images:[
             {
                 id:1,
                 link:"http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg",
@@ -11,31 +11,135 @@ export const carouselData = [
             },
             {
                 id:3,
-                link:"hhttp://images.amazon.com/images/P/042519065X.01.LZZZZZZZ.jpg",
+                link:"http://images.amazon.com/images/P/042519065X.01.LZZZZZZZ.jpg",
             },
             {
                 id:4,
+                link:"http://images.amazon.com/images/P/0439625602.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:5,
+                link:"http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:6,
+                link:"http://images.amazon.com/images/P/0002005018.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:7,
+                link:"http://images.amazon.com/images/P/042519065X.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:8,
                 link:"http://images.amazon.com/images/P/0439625602.01.LZZZZZZZ.jpg",
             },
         ]
     },
     {
-        images1:[
+        images:[
             {
                 id:1,
-                link:"http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg",
+                link:"http://images.amazon.com/images/P/0192860925.01.LZZZZZZZ.jpg",
             },
             {
                 id:2,
-                link:"http://images.amazon.com/images/P/0002005018.01.LZZZZZZZ.jpg",
+                link:"http://images.amazon.com/images/P/0451162072.01.LZZZZZZZ.jpg",
             },
             {
                 id:3,
-                link:"hhttp://images.amazon.com/images/P/042519065X.01.LZZZZZZZ.jpg",
+                link:"http://images.amazon.com/images/P/185715133X.01.LZZZZZZZ.jpg",
             },
             {
                 id:4,
-                link:"http://images.amazon.com/images/P/0439625602.01.LZZZZZZZ.jpg",
+                link:"http://images.amazon.com/images/P/0393317552.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:5,
+                link:"http://images.amazon.com/images/P/0192860925.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:6,
+                link:"http://images.amazon.com/images/P/0451162072.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:7,
+                link:"http://images.amazon.com/images/P/185715133X.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:8,
+                link:"http://images.amazon.com/images/P/0393317552.01.LZZZZZZZ.jpg",
+            },
+        ]
+    },
+    {
+        images:[
+            {
+                id:1,
+                link:"http://images.amazon.com/images/P/0671685635.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:2,
+                link:"http://images.amazon.com/images/P/1573222453.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:3,
+                link:"http://images.amazon.com/images/P/0226320618.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:4,
+                link:"http://images.amazon.com/images/P/1593080549.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:5,
+                link:"http://images.amazon.com/images/P/0671685635.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:6,
+                link:"http://images.amazon.com/images/P/1573222453.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:7,
+                link:"http://images.amazon.com/images/P/0226320618.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:8,
+                link:"http://images.amazon.com/images/P/1593080549.01.LZZZZZZZ.jpg",
+            },
+        ]
+    },
+    {
+        images:[
+            {
+                id:1,
+                link:"http://images.amazon.com/images/P/185326041X.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:2,
+                link:"http://images.amazon.com/images/P/0945353871.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:3,
+                link:"http://images.amazon.com/images/P/0440234743.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:4,
+                link:"http://images.amazon.com/images/P/0821766570.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:5,
+                link:"http://images.amazon.com/images/P/185326041X.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:6,
+                link:"http://images.amazon.com/images/P/0945353871.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:7,
+                link:"http://images.amazon.com/images/P/0440234743.01.LZZZZZZZ.jpg",
+            },
+            {
+                id:8,
+                link:"http://images.amazon.com/images/P/0821766570.01.LZZZZZZZ.jpg",
             },
         ]
     }
