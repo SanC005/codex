@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Hero() {
   return (
     <div className="bg-sky-100 h-full flex pl-2 md:pl-8 justify-between text-black">
-      <div className="flex flex-col py-64 xl:px-8 px-2">
+      <div className="flex flex-col py-64 xl:px-8 px-2 lg:pr-12">
         <div className="py-4 text-6xl sm:text-8xl font-semibold font-sans xl:py-4 bg-gradient-to-r from-orange-600 via-purple-600 to-blue-600 text-transparent bg-clip-text bg-300% animate-gradient">
           The Gateway<br></br> to Knowledge
         </div>
