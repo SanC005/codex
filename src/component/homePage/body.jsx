@@ -1,31 +1,31 @@
 import React from "react";
 import { carouselData } from "../data/carouselData";
 function Body() {
-  const cara0 = carouselData[0].images.map((e) => {
+  const cara0 = carouselData[0].images.map((e,i) => {
     return (
-      <div className="carousel-item h-full w-full">
-          <img className="object-fill w-full" src={e.link} alt="book_image"/>
+      <div className="carousel-item h-full w-full" key={i}>
+          <img className="object-fill w-full"  src={e.link} alt="book_image"/>
         </div>
     )
   })
-  const cara1 = carouselData[1].images.map((e) => {
+  const cara1 = carouselData[1].images.map((e,i) => {
     return (
-      <div className="carousel-item h-full w-full">
-          <img className="object-fill w-full" src={e.link} alt="book_image"/>
+      <div className="carousel-item h-full w-full" key={i}>
+          <img className="object-fill w-full"  src={e.link} alt="book_image"/>
         </div>
     )
   })
-  const cara2 = carouselData[2].images.map((e) => {
+  const cara2 = carouselData[2].images.map((e,i) => {
     return (
-      <div className="carousel-item h-full w-full">
-          <img className="object-fill w-full" src={e.link} alt="book_image"/>
+      <div className="carousel-item h-full w-full" key={i}>
+          <img className="object-fill w-full"  src={e.link} alt="book_image"/>
         </div>
     )
   })
-  const cara3 = carouselData[3].images.map((e) => {
+  const cara3 = carouselData[3].images.map((e,i) => {
     return (
-      <div className="carousel-item h-full w-full">
-          <img className="object-fill w-full" src={e.link} alt="book_image"/>
+      <div className="carousel-item h-full w-full" key={i}>
+          <img className="object-fill w-full"  src={e.link} alt="book_image"/>
         </div>
     )
   })
@@ -58,8 +58,8 @@ function Body() {
       
       </div>
       <div className="flex flex-col justify-around ">
-    <div className="flex text-6xl font-thin w-full justify-center ">
-      <span className="w-fit shadow-white">
+    <div className="flex text-6xl font-thin w-full justify-center bg-blue-300">
+      <span className="w-fit shadow-white px-12">
         Endless Collections of Books
         </span>
         

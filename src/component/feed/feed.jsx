@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Card from "../card/card";
 import { bookData } from "../data/bookData";
-const Card2 = ({ newid, newpic, newtitle, callBackFunction2 }) => {
+const Card2 = ({ newid, newpic, newtitle, callBackFunction2,genre,author,year }) => {
   return (
     <>
       <div onClick={callBackFunction2} className="min-h-screen grid place-items-center font-mono ">
@@ -15,14 +15,14 @@ const Card2 = ({ newid, newpic, newtitle, callBackFunction2 }) => {
             />
           </div>
           <div className="p-3 ">
-            <p className="block mb-1 text-center font-extralight">{newtitle}</p>
-            <p className="text-xs tracking-tighter text-gray-600">this is the discription of the book u want to read </p>
+            <p className="block mb-1 text-center font-extralight text-sm">{newtitle}</p>
+            <p className="text-xs tracking-tighter text-gray-600 text-center">{genre}&nbsp;{year} </p>
           </div>
-          <div className="flex justify-between items-center p-2">
-            <div>Author Name</div>
+          <div className="flex justify-between items-center p-0">
+            <div>{author}</div>
             <div className="flex">
               <i className="material-icons" style={{ color: "#522cad" }} />
-              <span className="text-sm ml-1">Avialibility</span>
+              <span className="text-sm ml-1">Available</span>
               <div className=" px-3 ml-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -49,34 +49,36 @@ const Card2 = ({ newid, newpic, newtitle, callBackFunction2 }) => {
 }
 
 function Feed() {
-
   
   const [id, setId] = useState(null)
   const [pic, setpic] = useState(null)
   const [title, settitle] = useState(null)
+  const [genre, setgenre] = useState(null)
+  const [author, setauthor] = useState(null)
+  const [year, setyear] = useState(null)
 
   const [launch, setLaunch] = useState(false)
 
   const defaultCss = " hidden fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 bg-opacity-50 bg-gray-900"
   const launchedCss = "  fixed top-0 left-0 w-full h-full flex items-center justify-center z-50 bg-opacity-50 bg-gray-900"
 
-
-
-
-
-
-  const callBackHandler = (newid, newtitle, newpic) => {
+  const callBackHandler = (newid, newtitle, newpic,year,author,genre) => {
     setId(newid)
     setpic(newpic)
     settitle(newtitle)
     setLaunch(true)
+    setgenre(genre)
+    setyear(year)
+    setId(author)
   }
 
-  const lol = () => {
-    console.log("hoi")
+  const remove = () => {
     setId(null)
     setpic(null)
     settitle(null)
+    setyear(null)
+    setauthor(null)
+    setgenre(null)
     setLaunch(false)
   }
 
@@ -87,12 +89,12 @@ function Feed() {
 
         {bookData.map((data) => {
           return <Card key={data._id.$oid} img={data.image_url_l}  callBackFunction={() => {
-            callBackHandler(data._id.$oid, data.book_title, data.image_url_l)
+            callBackHandler(data._id.$oid, data.book_title || data["Book-Title"], data.image_url_l,data.year_of_publication,data.book_author || data["Book-Author"],data.genre)
           }} />
         })}
       </div>
       <div  className={launch ? launchedCss : defaultCss}>
-        <Card2 newid={id} newpic={pic} newtitle={title} callBackFunction2={lol} />
+        <Card2 newid={id} newpic={pic} newtitle={title} callBackFunction2={remove} year={year} author={author} genre={genre} />
       </div>
 
     </div>

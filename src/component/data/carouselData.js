@@ -34,35 +34,35 @@ export const carouselData = [
                 link:"http://images.amazon.com/images/P/0439625602.01.LZZZZZZZ.jpg",
             },
             {
-                id:1,
+                id:11,
                 link:"http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg",
             },
             {
-                id:2,
+                id:12,
                 link:"http://images.amazon.com/images/P/0002005018.01.LZZZZZZZ.jpg",
             },
             {
-                id:3,
+                id:13,
                 link:"http://images.amazon.com/images/P/042519065X.01.LZZZZZZZ.jpg",
             },
             {
-                id:4,
+                id:14,
                 link:"http://images.amazon.com/images/P/0439625602.01.LZZZZZZZ.jpg",
             },
             {
-                id:5,
+                id:15,
                 link:"http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg",
             },
             {
-                id:6,
+                id:16,
                 link:"http://images.amazon.com/images/P/0002005018.01.LZZZZZZZ.jpg",
             },
             {
-                id:7,
+                id:17,
                 link:"http://images.amazon.com/images/P/042519065X.01.LZZZZZZZ.jpg",
             },
             {
-                id:8,
+                id:18,
                 link:"http://images.amazon.com/images/P/0439625602.01.LZZZZZZZ.jpg",
             },
         ]
@@ -102,35 +102,35 @@ export const carouselData = [
                 link:"http://images.amazon.com/images/P/0393317552.01.LZZZZZZZ.jpg",
             },
             {
-                id:1,
+                id:11,
                 link:"http://images.amazon.com/images/P/0192860925.01.LZZZZZZZ.jpg",
             },
             {
-                id:2,
+                id:12,
                 link:"http://images.amazon.com/images/P/0451162072.01.LZZZZZZZ.jpg",
             },
             {
-                id:3,
+                id:13,
                 link:"http://images.amazon.com/images/P/185715133X.01.LZZZZZZZ.jpg",
             },
             {
-                id:4,
+                id:14,
                 link:"http://images.amazon.com/images/P/0393317552.01.LZZZZZZZ.jpg",
             },
             {
-                id:5,
+                id:15,
                 link:"http://images.amazon.com/images/P/0192860925.01.LZZZZZZZ.jpg",
             },
             {
-                id:6,
+                id:16,
                 link:"http://images.amazon.com/images/P/0451162072.01.LZZZZZZZ.jpg",
             },
             {
-                id:7,
+                id:17,
                 link:"http://images.amazon.com/images/P/185715133X.01.LZZZZZZZ.jpg",
             },
             {
-                id:8,
+                id:18,
                 link:"http://images.amazon.com/images/P/0393317552.01.LZZZZZZZ.jpg",
             },
         ]
@@ -170,35 +170,35 @@ export const carouselData = [
                 link:"http://images.amazon.com/images/P/1593080549.01.LZZZZZZZ.jpg",
             },
             {
-                id:1,
+                id:11,
                 link:"http://images.amazon.com/images/P/0671685635.01.LZZZZZZZ.jpg",
             },
             {
-                id:2,
+                id:12,
                 link:"http://images.amazon.com/images/P/1573222453.01.LZZZZZZZ.jpg",
             },
             {
-                id:3,
+                id:13,
                 link:"http://images.amazon.com/images/P/0226320618.01.LZZZZZZZ.jpg",
             },
             {
-                id:4,
+                id:14,
                 link:"http://images.amazon.com/images/P/1593080549.01.LZZZZZZZ.jpg",
             },
             {
-                id:5,
+                id:15,
                 link:"http://images.amazon.com/images/P/0671685635.01.LZZZZZZZ.jpg",
             },
             {
-                id:6,
+                id:16,
                 link:"http://images.amazon.com/images/P/1573222453.01.LZZZZZZZ.jpg",
             },
             {
-                id:7,
+                id:17,
                 link:"http://images.amazon.com/images/P/0226320618.01.LZZZZZZZ.jpg",
             },
             {
-                id:8,
+                id:18,
                 link:"http://images.amazon.com/images/P/1593080549.01.LZZZZZZZ.jpg",
             },
         ]
@@ -238,35 +238,35 @@ export const carouselData = [
                 link:"http://images.amazon.com/images/P/0821766570.01.LZZZZZZZ.jpg",
             },
             {
-                id:1,
+                id:11,
                 link:"http://images.amazon.com/images/P/185326041X.01.LZZZZZZZ.jpg",
             },
             {
-                id:2,
+                id:12,
                 link:"http://images.amazon.com/images/P/0945353871.01.LZZZZZZZ.jpg",
             },
             {
-                id:3,
+                id:13,
                 link:"http://images.amazon.com/images/P/0440234743.01.LZZZZZZZ.jpg",
             },
             {
-                id:4,
+                id:14,
                 link:"http://images.amazon.com/images/P/0821766570.01.LZZZZZZZ.jpg",
             },
             {
-                id:5,
+                id:15,
                 link:"http://images.amazon.com/images/P/185326041X.01.LZZZZZZZ.jpg",
             },
             {
-                id:6,
+                id:16,
                 link:"http://images.amazon.com/images/P/0945353871.01.LZZZZZZZ.jpg",
             },
             {
-                id:7,
+                id:17,
                 link:"http://images.amazon.com/images/P/0440234743.01.LZZZZZZZ.jpg",
             },
             {
-                id:8,
+                id:18,
                 link:"http://images.amazon.com/images/P/0821766570.01.LZZZZZZZ.jpg",
             },
         ]

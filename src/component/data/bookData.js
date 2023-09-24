@@ -18,8 +18,8 @@ export const bookData = [
       "$oid": "650de545024cf9cc5d65dbac"
     },
     "ISBN": 61076031,
-    "book_title": "Mary-Kate &amp; Ashley Switching Goals (Mary-Kate and Ashley Starring in)",
-    "book_author": "Mary-Kate &amp; Ashley Olsen",
+    "book_title": "Mary-Kate & Ashley Switching Goals (Mary-Kate and Ashley Starring in)",
+    "book_author": "Mary-Kate & Ashley Olsen",
     "year_of_publication": 2000,
     "publisher": "HarperEntertainment",
     "image_url_s": "http://images.amazon.com/images/P/0061076031.01.THUMBZZZ.jpg",
@@ -613,34 +613,6 @@ export const bookData = [
   },
   {
     "_id": {
-      "$oid": "650de547024cf9cc5d66467d"
-    },
-    "ISBN": 425067645,
-    "Book-Title": "Icebreaker",
-    "Book-Author": "John Gardner",
-    "year_of_publication": 1984,
-    "publisher": "Berkley Publishing Group",
-    "image_url_s": "http://images.amazon.com/images/P/0425067645.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0425067645.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0425067645.01.LZZZZZZZ.jpg",
-    "genre": "Romance"
-  },
-  {
-    "_id": {
-      "$oid": "650de545024cf9cc5d65eedb"
-    },
-    "ISBN": 440222915,
-    "book_title": "Outlander",
-    "book_author": "DIANA GABALDON",
-    "year_of_publication": 1996,
-    "publisher": "Dell",
-    "image_url_s": "http://images.amazon.com/images/P/0440222915.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0440222915.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0440222915.01.LZZZZZZZ.jpg",
-    "genre": "Romance"
-  },
-  {
-    "_id": {
       "$oid": "650de546024cf9cc5d65fa3b"
     },
     "ISBN": 140373373,
@@ -721,20 +693,6 @@ export const bookData = [
     "image_url_s": "http://images.amazon.com/images/P/0380776162.01.THUMBZZZ.jpg",
     "image_url_m": "http://images.amazon.com/images/P/0380776162.01.MZZZZZZZ.jpg",
     "image_url_l": "http://images.amazon.com/images/P/0380776162.01.LZZZZZZZ.jpg",
-    "genre": "Romance"
-  },
-  {
-    "_id": {
-      "$oid": "650de550024cf9cc5d67acfc"
-    },
-    "ISBN": 380786583,
-    "Book-Title": "Indigo",
-    "Book-Author": "Beverly Jenkins",
-    "year_of_publication": 1996,
-    "publisher": "Harper Mass Market Paperbacks (Mm)",
-    "image_url_s": "http://images.amazon.com/images/P/0380786583.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0380786583.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0380786583.01.LZZZZZZZ.jpg",
     "genre": "Romance"
   },
   {
