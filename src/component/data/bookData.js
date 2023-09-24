@@ -1,17 +1,4 @@
-export const recommendations = [{
-    "_id": {
-      "$oid": "650de545024cf9cc5d65dba6"
-    },
-    "ISBN": 1881320189,
-    "book_title": "Goodbye to the Buttermilk Sky",
-    "book_author": "Julia Oliver",
-    "year_of_publication": 1994,
-    "publisher": "River City Pub",
-    "image_url_s": "http://images.amazon.com/images/P/1881320189.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/1881320189.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/1881320189.01.LZZZZZZZ.jpg",
-    "genre": "Fiction"
-  },
+export const bookData = [
   {
     "_id": {
       "$oid": "650de545024cf9cc5d65dba8"
@@ -54,20 +41,7 @@ export const recommendations = [{
     "image_url_l": "http://images.amazon.com/images/P/0971880107.01.LZZZZZZZ.jpg",
     "genre": "Fiction"
   },
-  {
-    "_id": {
-      "$oid": "650de548024cf9cc5d6651b9"
-    },
-    "ISBN": 451521161,
-    "Book-Title": "War and Peace",
-    "Book-Author": "Leo Tolstoy",
-    "year_of_publication": 1989,
-    "publisher": "Penguin USA",
-    "image_url_s": "http://images.amazon.com/images/P/0451521161.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0451521161.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0451521161.01.LZZZZZZZ.jpg",
-    "genre": "Fiction"
-  },
+  
   {
     "_id": {
       "$oid": "650de548024cf9cc5d66538f"
@@ -82,20 +56,7 @@ export const recommendations = [{
     "image_url_l": "http://images.amazon.com/images/P/0446675539.01.LZZZZZZZ.jpg",
     "genre": "Fiction"
   },
-  {
-    "_id": {
-      "$oid": "650de545024cf9cc5d65e8b1"
-    },
-    "ISBN": 345272579,
-    "book_title": "The Hobbit",
-    "book_author": "J. R. R. Tolkien",
-    "year_of_publication": 1977,
-    "publisher": "Ballantine Books",
-    "image_url_s": "http://images.amazon.com/images/P/0345272579.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0345272579.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0345272579.01.LZZZZZZZ.jpg",
-    "genre": "Fiction"
-  },
+  
   {
     "_id": {
       "$oid": "650de545024cf9cc5d65dfaa"
@@ -139,20 +100,7 @@ export const recommendations = [{
     "image_url_l": "http://images.amazon.com/images/P/074322678X.01.LZZZZZZZ.jpg",
     "genre": "Fiction"
   },
-  {
-    "_id": {
-      "$oid": "650de545024cf9cc5d65e716"
-    },
-    "ISBN": 20519109,
-    "book_title": "The Old Man and the Sea (A Scribner Classic)",
-    "book_author": "Ernest Hemingway",
-    "year_of_publication": 1987,
-    "publisher": "Collier Books",
-    "image_url_s": "http://images.amazon.com/images/P/0020519109.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0020519109.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0020519109.01.LZZZZZZZ.jpg",
-    "genre": "Fiction"
-  },
+  
   {
     "_id": {
       "$oid": "650de545024cf9cc5d65e929"
@@ -238,20 +186,7 @@ export const recommendations = [{
     "image_url_l": "http://images.amazon.com/images/P/185715133X.01.LZZZZZZZ.jpg",
     "genre": "Fiction"
   },
-  {
-    "_id": {
-      "$oid": "650de547024cf9cc5d663ec4"
-    },
-    "ISBN": 140350489,
-    "Book-Title": "Dracula (Puffin Classics)",
-    "Book-Author": "Bram Stoker",
-    "year_of_publication": 1986,
-    "publisher": "Putnam Pub Group",
-    "image_url_s": "http://images.amazon.com/images/P/0140350489.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0140350489.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0140350489.01.LZZZZZZZ.jpg",
-    "genre": "Fiction"
-  },
+  
   {
     "_id": {
       "$oid": "650de545024cf9cc5d65dd19"
@@ -381,20 +316,6 @@ export const recommendations = [{
   },
   {
     "_id": {
-      "$oid": "650de54e024cf9cc5d675a0f"
-    },
-    "ISBN": 1853266957,
-    "Book-Title": "The Generalship of Alexander the Great (Wordsworth Military Library)",
-    "Book-Author": "J. F. C. Fuller",
-    "year_of_publication": 1998,
-    "publisher": "Combined Books",
-    "image_url_s": "http://images.amazon.com/images/P/1853266957.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/1853266957.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/1853266957.01.LZZZZZZZ.jpg",
-    "genre": "History"
-  },
-  {
-    "_id": {
       "$oid": "650de545024cf9cc5d65dbae"
     },
     "ISBN": 689821166,
@@ -421,135 +342,7 @@ export const recommendations = [{
     "image_url_l": "http://images.amazon.com/images/P/0945353871.01.LZZZZZZZ.jpg",
     "genre": "History"
   },
-  {
-    "_id": {
-      "$oid": "650de548024cf9cc5d6665d2"
-    },
-    "ISBN": 553226355,
-    "Book-Title": "The Third Wave",
-    "Book-Author": "Alvin Toffler",
-    "year_of_publication": 1981,
-    "publisher": "Bantam Books",
-    "image_url_s": "http://images.amazon.com/images/P/0553226355.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0553226355.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0553226355.01.LZZZZZZZ.jpg",
-    "genre": "History"
-  },
   
-  {
-    "_id": {
-      "$oid": "650de545024cf9cc5d65db97"
-    },
-    "ISBN": 60973129,
-    "book_title": "Decision in Normandy",
-    "book_author": "Carlo D'Este",
-    "year_of_publication": 1991,
-    "publisher": "HarperPerennial",
-    "image_url_s": "http://images.amazon.com/images/P/0060973129.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0060973129.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0060973129.01.LZZZZZZZ.jpg",
-    "genre": "History"
-  },
-  {
-    "_id": {
-      "$oid": "650de545024cf9cc5d65db97"
-    },
-    "ISBN": 60973129,
-    "book_title": "Decision in Normandy",
-    "book_author": "Carlo D'Este",
-    "year_of_publication": 1991,
-    "publisher": "HarperPerennial",
-    "image_url_s": "http://images.amazon.com/images/P/0060973129.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0060973129.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0060973129.01.LZZZZZZZ.jpg",
-    "genre": "History"
-  },
-  {
-    "_id": {
-      "$oid": "650de545024cf9cc5d65db99"
-    },
-    "ISBN": 393045218,
-    "book_title": "The Mummies of Urumchi",
-    "book_author": "E. J. W. Barber",
-    "year_of_publication": 1999,
-    "publisher": "W. W. Norton &amp; Company",
-    "image_url_s": "http://images.amazon.com/images/P/0393045218.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0393045218.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0393045218.01.LZZZZZZZ.jpg",
-    "genre": "History"
-  },
-  {
-    "_id": {
-      "$oid": "650de545024cf9cc5d65ee9c"
-    },
-    "ISBN": 553380168,
-    "book_title": "A Brief History of Time : The Updated and Expanded Tenth Anniversary Edition",
-    "book_author": "STEPHEN HAWKING",
-    "year_of_publication": 1998,
-    "publisher": "Bantam",
-    "image_url_s": "http://images.amazon.com/images/P/0553380168.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0553380168.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0553380168.01.LZZZZZZZ.jpg",
-    "genre": "History"
-  },
-  {
-    "_id": {
-      "$oid": "650de545024cf9cc5d65e44c"
-    },
-    "ISBN": 192860925,
-    "book_title": "The Selfish Gene",
-    "book_author": "Richard Dawkins",
-    "year_of_publication": 1990,
-    "publisher": "Oxford University Press",
-    "image_url_s": "http://images.amazon.com/images/P/0192860925.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0192860925.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0192860925.01.LZZZZZZZ.jpg",
-    "genre": "History"
-  },
-  {
-    "_id": {
-      "$oid": "650de54a024cf9cc5d66bdb6"
-    },
-    "ISBN": 451627873,
-    "Book-Title": "The Double Helix: A Personal Account of the Discovery of the Structure of DNA",
-    "Book-Author": "James D. Watson",
-    "year_of_publication": 1991,
-    "publisher": "Signet Book",
-    "image_url_s": "http://images.amazon.com/images/P/0451627873.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0451627873.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0451627873.01.LZZZZZZZ.jpg",
-    "genre": "History"
-  },
-  {
-    "_id": {
-      "$oid": "650de548024cf9cc5d664adb"
-    },
-    "ISBN": 671685635,
-    "Book-Title": "Ghost Story",
-    "Book-Author": "Peter Straub",
-    "year_of_publication": 1989,
-    "publisher": "Pocket",
-    "image_url_s": "http://images.amazon.com/images/P/0671685635.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0671685635.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0671685635.01.LZZZZZZZ.jpg",
-    "genre": "Horror"
-  },
-  {
-    "_id": {
-      "$oid": "650de54c024cf9cc5d670c55"
-    },
-    "ISBN": {
-      "$numberLong": "3453866797"
-    },
-    "Book-Title": "Ring.",
-    "Book-Author": "Koji Suzuki",
-    "year_of_publication": 2003,
-    "publisher": "Heyne",
-    "image_url_s": "http://images.amazon.com/images/P/3453866797.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/3453866797.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/3453866797.01.LZZZZZZZ.jpg",
-    "genre": "Horror"
-  },
   {
     "_id": {
       "$oid": "650de547024cf9cc5d6620b2"
@@ -578,22 +371,7 @@ export const recommendations = [{
     "image_url_l": "http://images.amazon.com/images/P/0451162072.01.LZZZZZZZ.jpg",
     "genre": "Horror"
   },
-  {
-    "_id": {
-      "$oid": "650de545024cf9cc5d65dcef"
-    },
-    "ISBN": {
-      "$numberLong": "8484509141"
-    },
-    "book_title": "Mientras Escribo",
-    "book_author": "Stephen King",
-    "year_of_publication": 2002,
-    "publisher": "Distribooks",
-    "image_url_s": "http://images.amazon.com/images/P/8484509141.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/8484509141.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/8484509141.01.LZZZZZZZ.jpg",
-    "genre": "Horror"
-  },
+  
   {
     "_id": {
       "$oid": "650de546024cf9cc5d6600a2"
@@ -608,20 +386,7 @@ export const recommendations = [{
     "image_url_l": "http://images.amazon.com/images/P/0312868855.01.LZZZZZZZ.jpg",
     "genre": "Horror"
   },
-  {
-    "_id": {
-      "$oid": "650de55c024cf9cc5d69a710"
-    },
-    "ISBN": 553197940,
-    "Book-Title": "The Bad Seed",
-    "Book-Author": "William March",
-    "year_of_publication": 1984,
-    "publisher": "Bantam Books",
-    "image_url_s": "http://images.amazon.com/images/P/0553197940.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0553197940.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0553197940.01.LZZZZZZZ.jpg",
-    "genre": "Horror"
-  },
+  
   {
     "_id": {
       "$oid": "650de545024cf9cc5d65f288"
@@ -778,34 +543,6 @@ export const recommendations = [{
   },
   {
     "_id": {
-      "$oid": "650de546024cf9cc5d66190c"
-    },
-    "ISBN": 451139712,
-    "book_title": "The stand",
-    "book_author": "Stephen King",
-    "year_of_publication": 1980,
-    "publisher": "New American Library",
-    "image_url_s": "http://images.amazon.com/images/P/0451139712.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0451139712.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0451139712.01.LZZZZZZZ.jpg",
-    "genre": "Horror"
-  },
-  {
-    "_id": {
-      "$oid": "650de546024cf9cc5d660527"
-    },
-    "ISBN": 553131605,
-    "book_title": "The Amityville Horror",
-    "book_author": "Jay Anson",
-    "year_of_publication": 1979,
-    "publisher": "Bantam Books",
-    "image_url_s": "http://images.amazon.com/images/P/0553131605.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0553131605.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0553131605.01.LZZZZZZZ.jpg",
-    "genre": "Horror"
-  },
-  {
-    "_id": {
       "$oid": "650de547024cf9cc5d662e58"
     },
     "ISBN": 446359203,
@@ -816,20 +553,6 @@ export const recommendations = [{
     "image_url_s": "http://images.amazon.com/images/P/0446359203.01.THUMBZZZ.jpg",
     "image_url_m": "http://images.amazon.com/images/P/0446359203.01.MZZZZZZZ.jpg",
     "image_url_l": "http://images.amazon.com/images/P/0446359203.01.LZZZZZZZ.jpg",
-    "genre": "Horror"
-  },
-  {
-    "_id": {
-      "$oid": "650de545024cf9cc5d65ea71"
-    },
-    "ISBN": 553236202,
-    "book_title": "Something Wicked This Way Comes",
-    "book_author": "Ray Bradbury",
-    "year_of_publication": 1983,
-    "publisher": "Bantam Doubleday Dell",
-    "image_url_s": "http://images.amazon.com/images/P/0553236202.01.THUMBZZZ.jpg",
-    "image_url_m": "http://images.amazon.com/images/P/0553236202.01.MZZZZZZZ.jpg",
-    "image_url_l": "http://images.amazon.com/images/P/0553236202.01.LZZZZZZZ.jpg",
     "genre": "Horror"
   },
   {

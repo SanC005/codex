@@ -14,12 +14,14 @@ function SearchResults({redirectionTo}) {
   const [bookList, setBookList] = useState([]);
   const [lastPage, setLastPage] = useState(false);
 
-  const key = "AIzaSyB3weTpE_uWcbQFLITLLf3clroI4EOB7Sw";
+  const key = process.env.REACT_APP_GOOGLE_API_KEY;
+
 
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        console.log("hey")
         const response = await axios.get(
           `https://www.googleapis.com/books/v1/volumes?q=${searchTerm}&startIndex=${currPage}&maxResults=10&key=${key}`
         );

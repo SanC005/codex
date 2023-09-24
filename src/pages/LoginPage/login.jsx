@@ -22,7 +22,7 @@ function Login() {
   useEffect(() => {
     /* global google */
     google.accounts.id.initialize({
-      client_id: "834208871160-k1fvufn3o3ftp8c58j6fft2hbe87gtnh.apps.googleusercontent.com",
+      client_id: process.env.REACT_APP_CLIENT_ID,
       callback: handleCallbackResponse
     });
     google.accounts.id.renderButton(
@@ -74,8 +74,8 @@ function Login() {
         </div>
         </div>:
       <div className="flex flex-col overflow-hidden rounded-md max md:flex-row md:flex-1 lg:max-w-screen-md shadow-lg shadow-gray-500/50">
-        <div className="text-white bg-[#effafc] w-0 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly invisible md:visible">
-          <img alt="image1" src="books_mint.jpg" />
+        <div className=" bg-sky-100 w-0 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly invisible md:visible text-black">
+          <img alt="books_image" src="read_books.svg" />
         </div>
         <div>
           <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
@@ -116,7 +116,7 @@ function Login() {
                       placeholder="abc@gmail.com"
                       autoComplete="email"
                       required=""
-                      className="bg-gray-50  border-gray-300  block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="bg-gray-50  border-gray-300  block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-2"
                     />
                   </div>
                 </div>
@@ -144,7 +144,7 @@ function Login() {
                       placeholder="••••••••"
                       autoComplete="current-password"
                       required=""
-                      className="bg-gray-50  border-gray-300 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="bg-gray-50  border-gray-300 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-2"
                     />
                   </div>
                 </div>

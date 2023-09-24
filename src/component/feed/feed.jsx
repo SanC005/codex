@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { sampleData } from "../data/sampleData";
 import Card from "../card/card";
-
+import { bookData } from "../data/bookData";
 const Card2 = ({ newid, newpic, newtitle, callBackFunction2 }) => {
   return (
     <>
@@ -85,9 +85,10 @@ function Feed() {
 
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {sampleData.map((data) => {
-          return <Card key={data.id} img={data.img}  callBackFunction={() => {
-            callBackHandler(data.id, data.title, data.img)
+
+        {bookData.map((data) => {
+          return <Card key={data._id.$oid} img={data.image_url_l}  callBackFunction={() => {
+            callBackHandler(data._id.$oid, data.book_title, data.image_url_l)
           }} />
         })}
       </div>
