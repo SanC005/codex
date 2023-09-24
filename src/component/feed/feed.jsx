@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { sampleData } from "../data/sampleData";
 import Card from "../card/card";
 import { bookData } from "../data/bookData";
 const Card2 = ({ newid, newpic, newtitle, callBackFunction2 }) => {

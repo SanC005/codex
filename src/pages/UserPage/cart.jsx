@@ -1,28 +1,14 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import Cartcard from "./cartcard"
-
+import { bookData } from '../../component/data/bookData';
 //this is just for the cart
-export const sampleData = [
-    {
-      id: 1,
-      title: "First Post!",
-      img: "https://www.searchenginejournal.com/wp-content/uploads/2020/08/7-ways-a-blog-can-help-your-business-right-now-5f3c06b9eb24e-1520x800.webp",
 
-    },
-    {
-      id: 2,
-      title: "Second Post!",
-      img: "https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-
-    },
-
-  ];
   
 
 function Cart() {
-    const cart = sampleData.map((data) => {
-        return <Cartcard key={data.id} title={data.title}></Cartcard>
+    const cart = bookData.slice(0,2).map((data) => {
+        return <Cartcard key={data._id.$oid} title={data.book_title} author={data.book_author} img={data.image_url_l}></Cartcard>
     })
     return (
         
