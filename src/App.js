@@ -7,7 +7,7 @@ import User from "./pages/UserPage/user";
 import { Route, Routes, Navigate } from "react-router-dom";
 import CommonLayout from "./component/commonLayout/commonLayout";
 import Cart from "./pages/UserPage/cart";
-
+import SearchResults from "./pages/Search/search";
 function App() {
   return (
     <Routes>
@@ -16,7 +16,7 @@ function App() {
         {/* <Route path="home" element={<Home />} /> */}
         <Route path="user" element={<User />} />
         <Route path="cart" element={<Cart />} />
-        
+        <Route path='/search/:searchTerm' element={<SearchResults />} />
         {/* <Route path="*" element={<Navigate to="/home" replace />} /> */}
       </Route>
 
