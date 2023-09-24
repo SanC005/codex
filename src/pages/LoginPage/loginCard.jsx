@@ -1,29 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Header from "../../component/homePage/header";
-import { Link } from "react-router-dom";
-import jwtDecode from "jwt-decode";
-function Login() {
-  const [user,setUser] = useState({});
-  function handleCallbackResponse(res){
-    // console.log("Encoded JWT ID token is: "+res.credential)
-    let userObj = jwtDecode(res.credential);
-    console.log(userObj)
-  }
-  useEffect(() => {
-    /* global google */
-    google.accounts.id.initialize({
-      client_id: "834208871160-k1fvufn3o3ftp8c58j6fft2hbe87gtnh.apps.googleusercontent.com",
-      callback: handleCallbackResponse
-    });
-    google.accounts.id.renderButton(
-      document.getElementById("signInDiv"), 
-      { theme: "outline",size:"large"}
-    );
-  },[])
+import React from 'react'
+import Link from 'next/link'
+export default function LoginCard() {
   return (
-    <div>
-      {/* <Header/> */}
-      
     <div className="flex items-center min-h-screen p-4 bg-gray-100 justify-center">
       <div className="flex flex-col overflow-hidden rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
         <div className="p-4 py-6 text-white bg-blue-500 w-0 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly invisible md:visible">
@@ -122,8 +100,6 @@ function Login() {
         </div>
       </div>
     </div>
-    </div>
-  );
-}
 
-export default Login;
+  )
+}
