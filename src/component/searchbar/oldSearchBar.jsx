@@ -6,7 +6,7 @@ const oldSearchBar = () => {
         <form>
   <div className="flex">
     <label
-      htmlFor="search-dropdown"
+      htmlFor="dropdown-button"
       className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
     >
       Your Email

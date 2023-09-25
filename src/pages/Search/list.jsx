@@ -1,7 +1,7 @@
 import { React } from "react";
 import SearchCard from "./searchCard";
 
-function List({ onScroll, listInnerRef, booksList }) {
+function SearchList({ onScroll, listInnerRef, booksList }) {
   return (
     <div>
         {JSON.stringify(booksList)}
@@ -44,4 +44,4 @@ function List({ onScroll, listInnerRef, booksList }) {
   );
 }
 
-export default List;
+export default SearchList;

@@ -24,9 +24,9 @@ function Hero() {
 
         </div>
       </div>
-      <div className="bg-[#effafc] py-32 invisible lg:visible flex align-middle">
+      <div className="bg-[#effafc] py-32 invisible lg:visible flex items-center">
         <img
-          className="w-[38rem]"
+          className="w-[38rem] "
           src="books_mint.jpg"
           alt="hero_image"
         ></img>

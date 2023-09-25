@@ -8,14 +8,30 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import CommonLayout from "./component/commonLayout/commonLayout";
 import Cart from "./pages/UserPage/cart";
 import SearchResults from "./pages/Search/search";
+import Suggestions from "./pages/UserPage/suggestion";
+import { RequireAuth } from "react-auth-kit";
 function App() {
   return (
     <Routes>
       <Route path="/" element={<CommonLayout />}>
       <Route index element={<Home />} />
         {/* <Route path="home" element={<Home />} /> */}
-        <Route path="user" element={<User />} />
-        <Route path="cart" element={<Cart />} />
+        {/* <Route path="user" element={<User />} /> */}
+        {/* <Route path="cart" element={<Cart />} /> */}
+        <Route
+          path="user"
+          element={
+            <RequireAuth loginPath="/login">
+              <User />
+            </RequireAuth>
+          }
+        >
+          <Route index element={<Suggestions />} />
+          <Route path="cart" element={<Cart />} />
+          {/* <Route path="borrowed" element={<Borrowed />} /> */}
+          <Route path="suggestions" element={<Suggestions />} />
+        </Route>
+
         <Route path='/search/:searchTerm' element={<SearchResults />} />
         {/* <Route path="*" element={<Navigate to="/home" replace />} /> */}
       </Route>

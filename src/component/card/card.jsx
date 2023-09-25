@@ -8,20 +8,20 @@ function Card({ title, img, callBackFunction }) {
           <div className="relative w-[250px] h-[400px] duration-[0.4s]  cursor-pointer  ">
             <section className="absolute w-full  h-full bg-cover bg-[center_top]">
               <div className="w-[250px] bg-white shadow-md rounded-xl duration-500 hover:bg-teal-200 hover:shadow-xl">
-                <p >
+                <div >
                   <img
                   alt="image2"
                     className="h-80 w-72 object-cover rounded-t-xl"
                     src={img}
                   />
                   <div className="px-4 py-3">
-                    <p className="text-lg font-bold text-black truncate block capitalize">
+                    <div className="text-lg font-bold text-black truncate block capitalize">
                       {title}
-                    </p>
+                    </div>
                     <div className="flex items-center">
-                      <p className="text-lg font-semibold text-black cursor-auto my-3">
+                      <div className="text-lg font-semibold text-black cursor-auto my-3">
                         Available
-                      </p>
+                      </div>
                       <div className="ml-auto">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ function Card({ title, img, callBackFunction }) {
                       </div>
                     </div>
                   </div>
-                </p>
+                </div>
               </div>
             </section>
           </div>

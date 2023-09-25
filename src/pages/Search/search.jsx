@@ -2,9 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import SearchCard from "./searchCard";
 import { MoonLoader } from "react-spinners";
+import { toast, ToastContainer } from "react-toastify";
 import { useParams } from "react-router-dom";
 import Lottie from "lottie-react";
 import bookLoading from "../../assests/bookLoading.json"
+import BookCard from "../../component/card/bookCard";
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   
@@ -21,7 +23,17 @@ function SearchResults({redirectionTo}) {
   const style = {
     height: 300,
   };
+  const notify = () => {
+   
 
+    toast.info("Login to add Books !", {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
+
+  const addButtonHandler = () => {
+    notify();
+  };
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -81,11 +93,19 @@ function SearchResults({redirectionTo}) {
         >
           {bookList &&
             bookList.length > 0 &&
-            bookList.map((i, index) => (
-              <SearchCard
+            bookList.map((book, index) => (
+              // <SearchCard
+              //   key={index}
+              //   title={i.volumeInfo.title}
+              //   img_src={i.volumeInfo?.imageLinks?.thumbnail}
+              // />
+              <BookCard
                 key={index}
-                title={i.volumeInfo.title}
-                img_src={i.volumeInfo?.imageLinks?.thumbnail}
+                title={book.volumeInfo.title}
+                author={book.volumeInfo?.authors?.join(" ")}
+                genre={book.volumeInfo?.categories?.join(" ")}
+                coverImage={book.volumeInfo?.imageLinks?.thumbnail}
+                authCheckCallBack={addButtonHandler}
               />
             ))}
           <div>
@@ -93,6 +113,7 @@ function SearchResults({redirectionTo}) {
           </div>
         </div>}
       </div>
+        <ToastContainer />
     </div>
   );
 }

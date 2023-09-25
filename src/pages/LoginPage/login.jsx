@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../component/homePage/header";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import jwtDecode from "jwt-decode";
+import { useSignIn } from "react-auth-kit";
+
 function Login() {
   const [user,setUser] = useState({});
   const [log,setLog] = useState(false);
@@ -31,26 +33,76 @@ function Login() {
     );
     google.accounts.id.prompt();
   },[])
-  const getLogDetails = async (e) => {
+  // const getLogDetails = async (e) => {
+  //   e.preventDefault();
+  //   const email = document.querySelector('#email').value
+  //   // const usernameInput = document.querySelector('#username').value
+  //   const password = document.querySelector('#password').value
+  //   // setSignUpDetails({username:`${usernameInput}`,email:`${emailInput}`,password:`${passwordInput}`})
+  //   // console.log(signUpDetails)
+  //   try {
+  //     const url = ``
+  //     const item = {email,password}
+  //     // const {user,token} = await postUser(item,url)
+  //     // console.log(user)
+  //     // console.log(token)
+  //     // localStorage.setItem('username', user.username)
+  //     // localStorage.setItem('email', email)
+  //     // localStorage.setItem('token', token)
+  //     alert('successfully logged in')
+  //   } catch (error) {
+  //     localStorage.removeItem('token')
+  //     localStorage.removeItem('user')
+  //   }
+    
+  // }
+  
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate()
+  
+  const signIn = useSignIn();
+  const handleSignup = async (e) => {
     e.preventDefault();
-    const email = document.querySelector('#email').value
-    // const usernameInput = document.querySelector('#username').value
-    const password = document.querySelector('#password').value
-    // setSignUpDetails({username:`${usernameInput}`,email:`${emailInput}`,password:`${passwordInput}`})
-    // console.log(signUpDetails)
+
+    const userData = {
+      email,
+      password,
+    };
+
     try {
-      const url = ``
-      const item = {email,password}
-      // const {user,token} = await postUser(item,url)
-      // console.log(user)
-      // console.log(token)
-      // localStorage.setItem('username', user.username)
-      // localStorage.setItem('email', email)
-      // localStorage.setItem('token', token)
-      alert('successfully logged in')
+      const response = await fetch(
+        "https://booksdbdep.onrender.com/api/v1/auth/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userData),
+        }
+      );
+
+      if (response.ok) {
+        console.log("login successful");
+
+        const data = await response.json();
+        const username = data.user.name;
+        const token = data.token;
+        console.log(username);
+        signIn({
+          token: token,
+          tokenType: "Bearer",
+          expiresIn: 3600,
+          authState: { email: username },
+        });
+        navigate("/user")
+
+        
+      } else {
+        console.error("Signup failed");
+      }
     } catch (error) {
-      localStorage.removeItem('token')
-      localStorage.removeItem('user')
+      console.error("Error:", error);
     }
   }
   return (
@@ -100,7 +152,7 @@ function Login() {
               </div>
             </div>
             <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-sm">
-              <form className="space-y-6" action="#" method="POST">
+              <form className="space-y-6"  onSubmit={handleSignup} autoComplete="on">
                 <div>
                   <label
                     htmlFor="email"
@@ -116,6 +168,7 @@ function Login() {
                       placeholder="abc@gmail.com"
                       autoComplete="email"
                       required=""
+                      onChange={(e) => setEmail(e.target.value)}
                       className="bg-gray-50  border-gray-300  block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-2"
                     />
                   </div>
@@ -144,19 +197,20 @@ function Login() {
                       placeholder="••••••••"
                       autoComplete="current-password"
                       required=""
+                      onChange={(e) => setPassword(e.target.value)}
                       className="bg-gray-50  border-gray-300 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-2"
                     />
                   </div>
                 </div>
                 <div>
-                  <Link to={'/user'}>
+                  {/* <Link to={'/user'}> */}
                   <button
                     type="submit"
                     className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Sign in
                   </button>
-                  </Link>
+                  {/* </Link> */}
                 </div>
               </form>
               <div className="mt-10 text-center text-sm text-gray-500">
